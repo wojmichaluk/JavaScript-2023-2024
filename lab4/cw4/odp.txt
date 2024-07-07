@@ -1,0 +1,24 @@
+Zadanie 1.8
+Wydaje mi się, że komunikat diagnostyczny nr 3 pojawia się na samym końcu, ponieważ znajduje się w callbacku
+funkcji asynchronicznej, która wykonuje się później niż funkcja synchroniczna (zaczyna wcześniej, ale w trakcie
+jest "blokowana" przez wersję synchroniczną, która ze swojej natury wykonuje się w całości na głównym wątku).
+Z kolei sam callback wykonuje się po wykonaniu funkcji asynchronicznej.
+
+Zadanie 2.5
+Przeglądarka wyświetla odpowiednio:
+1. Hello Jan
+2. Hello Stanisław Polak(AGH)
+3. Hello null
+4. Hello Jan
+W konsoli serwera URL wyświetla się w postaci obiektu z atrybutami href (np. 'http://localhost:8000/'),
+origin (np. 'http://localhost:8000'), protocol ('http') itd. W zależności od adresu są różne parametry
+wyszukiwania i względny URL.
+
+Zadanie 2.6
+Nie, nie zachowuje się jak typowy serwer WWW, bowiem dla nierozpoznanego URL (wszystkie podane
+przykłady) zwraca status 501.
+
+Zadanie 3.4
+W terminalu pojawiają się wylistowane przez linter błędy, ale treść kodu źródłowego nie uległa zmianie.
+
+

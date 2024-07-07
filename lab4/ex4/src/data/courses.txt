@@ -1,0 +1,23 @@
+1
+Podstawy programowania
+
+2
+Algorytmy i struktury danych
+
+3
+Bazy danych
+
+4
+Inżynieria oprogramowania
+
+5
+Sieci komputerowe
+
+6
+Sztuczna inteligencja
+
+7
+Bezpieczeństwo komputerowe
+
+8
+Analiza danych
