@@ -1,0 +1,142 @@
+aside  {
+    /*Na podstawie punktu 6 usuwam:
+    background-color: #EFF;*/
+
+    /*Na podstawie punktu 8 usuwam:
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;*/
+
+    width: 750px;
+    margin-left: auto;
+}
+
+aside h1 {
+    margin: 8px;
+    font-size: 44px;
+}
+
+aside ul {
+    /*Na podstawie punktu 8 usuwam:
+    margin-left: 25px;
+    padding: 0 0 20px 40px;*/
+}
+
+.azure {
+    background-color: #EFF;
+}
+
+body {
+    width: 1460px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 678.8px;
+}
+
+.contents :nth-child(1) { order: 1; }
+.contents :nth-child(2) { order: 3; }
+.contents :nth-child(3) { order: 2; }
+
+.element {
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.element ul {
+    margin-left: 25px;
+    padding: 0 0 20px 40px;
+}
+
+footer {
+    /*Na podstawie punktu 6 usuwam:
+    background-color: #EFF;*/
+
+    /*Na podstawie punktu 8 usuwam:
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;*/
+
+    padding: 8px;
+    margin-left: 25px;
+} 
+
+h1 {
+    margin: 8px;
+    font-size: 52px;
+}
+
+h2 {
+    margin: 8px;
+    font-size: 44px;
+}
+
+header {
+    /*Na podstawie punktu 6 usuwam:
+    background-color: #EFF;*/
+
+    /*Na podstawie punktu 8 usuwam:
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;*/
+
+    margin-left: 25px;
+}  
+
+main { 
+    /*Na podstawie punktu 6 usuwam:
+    background-color: #EFF;*/
+
+    /*Na podstawie punktu 8 usuwam:
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;*/
+
+    width: 550px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+}
+
+main blockquote {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-family: Courier;
+    font-size: 16px;
+}
+
+nav {
+    /*Na podstawie punktu 6 usuwam:
+    background-color: #EFF;*/
+
+    /*Na podstawie punktu 8 usuwam:
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;*/
+
+    width: 180px;
+    margin-left: 25px;
+}
+
+nav ul {  
+    /*Na podstawie punktu 8 usuwam:
+    margin-left: 25px;
+    padding: 0 0 20px 40px;*/
+}
+
+nav li {
+}

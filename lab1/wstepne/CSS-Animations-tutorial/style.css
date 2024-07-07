@@ -1,0 +1,52 @@
+@keyframes appear {
+    /*lub from*/
+    0% {
+        /*opacity: 0;*/
+        transform: translateX(-300px);
+    }
+
+    /*z % można też używać wartości
+    pośrednich, np. 50%*/
+
+    10% {
+        transform: translateY(-50px);
+        background-color: pink;
+    }
+
+    50% {
+        transform: translateY(-300px);
+    }
+
+    /*lub to*/
+    100% {
+        /*opacity: 1;*/
+        transform: translateX(300px);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /*animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: 
+    cubic-bezier(.36, -1.18, .65, 1.85);*/
+    animation: 1s 2s both infinite
+    alternate ease-in-out appear;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}

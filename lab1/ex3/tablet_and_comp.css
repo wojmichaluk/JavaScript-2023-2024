@@ -1,0 +1,91 @@
+aside  {
+    width: 51vw;
+    height: 19vw;
+    margin-left: auto;
+}
+
+aside h1 {
+    margin: 0.5vw;
+    font-size: 3vw;
+}
+
+.azure {
+    background-color: #EFF;
+}
+
+body {
+    width: 99vw;
+    height: 46.3vw;
+    margin: 0.5vw 0 0 0;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.contents :nth-child(1) { order: 1; }
+.contents :nth-child(2) { order: 3; }
+.contents :nth-child(3) { order: 2; }
+
+.element {
+    border: 0.2vw solid #A8A8A8;
+    box-shadow: 0 0 0.5vw grey;
+    margin-right: 1.8vw;
+    margin-bottom: 1.8vw;
+    font-size: 1.8vw;
+}
+
+.element ul {
+    margin-left: 1.8vw;
+    padding: 0 0 1.4vw 2.8vw;
+}
+
+footer {
+    padding: 0.5vw;
+    margin-left: 1.8vw;
+} 
+
+h1 {
+    margin: 0.5vw;
+    font-size: 3.5vw;
+}
+
+h2 {
+    margin: 0.5vw;
+    font-size: 3vw;
+}
+
+header {
+    margin-left: 1.8vw;
+}  
+
+main { 
+    width: 38vw;
+    height: 31.5vw;
+    padding-bottom: 1.4vw;
+    margin-left: 1.8vw;
+}
+
+main blockquote {
+    margin-left: 0.6vw;
+    margin-right: 0.6vw;
+    font-family: Courier;
+    font-size: 1.1vw;
+}
+
+nav {
+    width: 12.5vw;
+    height: 9vw;
+    margin-left: 1.8vw;
+}
+
+nav ul {  
+}
+
+nav li {
+}
