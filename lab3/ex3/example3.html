@@ -1,0 +1,65 @@
+<!-- @author Stanisław Polak <polak@agh.edu.pl> -->
+                        
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://unpkg.com/react@latest/umd/react.development.js"
+          crossorigin=""></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"
+          crossorigin=""></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>
+      Example 3
+    </title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- 
+        Kontener dla komponentu. 
+        React renderuje wyspecyfikowany kod HTML wewnątrz tzw. kontenera, 
+        tj. wybranego przez nas elementu strony internetowej. 
+        -->
+    </div>
+
+    <pre id="output"></pre>
+    
+    <!-- Komponent 'Hello' -->
+    <script type="text/babel">
+        // Logika komponentu
+        
+        // Komponent klasowy
+        class Hello extends React.Component {
+            print = (event) => {
+                let container = document.querySelector('#output');
+                container.appendChild(document.createTextNode(this.props.welcome));
+                container.appendChild(document.createElement('br'));
+                container.appendChild(document.createTextNode(event._reactName));
+                container.appendChild(document.createElement('br'));
+            }
+            render() {
+                return <button onClick={this.print}>Click me</button>
+            }
+        }
+        
+        // Komponent funkcyjny
+        /*
+        function Hello({ welcome }) {
+            const print = (event) => {
+                let container = document.querySelector('#output');
+                container.appendChild(document.createTextNode(welcome));
+                container.appendChild(document.createElement('br'));
+                container.appendChild(document.createTextNode(event._reactName));
+                container.appendChild(document.createElement('br'));
+            }
+
+            return <button onClick={print}>Click me</button>
+        }
+        */
+
+        const container = document.getElementById('root'); // Pobieranie referencji na kontener
+        const root = ReactDOM.createRoot(container);       // Tworzenie korzenia React-a dla podanego kontenera
+        root.render(<Hello welcome="Hello World!" />);      // Renderowanie komponentu
+    </script>
+  </body>
+</html>

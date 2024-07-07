@@ -1,0 +1,60 @@
+<!-- @author Stanisław Polak <polak@agh.edu.pl> -->
+                        
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://unpkg.com/react@latest/umd/react.development.js"
+          crossorigin=""></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"
+          crossorigin=""></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- See https://babeljs.io/docs/babel-standalone -->
+    <title>
+      Example 1
+    </title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- 
+        Kontener dla komponentu. 
+        React renderuje wyspecyfikowany kod HTML wewnątrz tzw. kontenera, 
+        tj. wybranego przez nas elementu strony internetowej. 
+        -->
+    </div>
+    <!-- Komponent 'Hello' -->
+    <script type="text/babel">
+        // Logika komponentu
+        
+        // Komponent klasowy
+        class Hello extends React.Component {
+            render() {
+                return <h1>Hello World!</h1>;
+            }
+        }
+        
+        //Komponent funkcyjny
+        /*
+        function Hello() {
+            return <h1>Hello World!</h1>;
+        }
+        */
+
+        const container = document.getElementById('root'); // Pobieranie referencji na kontener
+        const root = ReactDOM.createRoot(container);       // Tworzenie korzenia React-a dla podanego kontenera
+        root.render(<Hello />);                            // Renderowanie komponentu
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this page for starting a new React project with JSX:
+      https://react.dev/learn/start-a-new-react-project
+
+      Read this page for adding React with JSX to an existing project:
+      https://react.dev/learn/add-react-to-an-existing-project
+    -->
+  </body>
+</html>

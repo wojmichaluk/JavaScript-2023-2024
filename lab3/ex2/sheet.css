@@ -1,0 +1,33 @@
+.azure {
+    background-color: #EFF;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    height: 678.8px;
+}
+
+.contents :nth-child(1) { order: 1; }
+.contents :nth-child(2) { order: 3; }
+.contents :nth-child(3) { order: 2; }
+
+.element {
+    border: 3px solid #A8A8A8;
+    box-shadow: 0 0 8px grey;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.element ul {
+    margin-left: 25px;
+    padding: 0 0 20px 40px;
+}
+
+.styled-button {
+    margin: 10px 0 10px 25px; 
+    width: 70px;
+}

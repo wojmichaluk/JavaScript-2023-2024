@@ -1,0 +1,12 @@
+2.
+2) Przy 50 iteracjach, obliczenia nie miały negatywnego wpływu na szybkość działania licznika.
+3) Natomiast dla większej liczby iteracji (2000) licznik się zatrzymał (zapewne czekając,
+aż wszystkie obliczenia się wykonają) i po pewnym czasie z powrotem zaczął działać.
+4) Normalnie GUI reaguje na akcje użytkownika natychmiastowo, natomiast w trakcie wykonywania
+obliczeń nie reagował, dopiero po zakończeniu obliczeń "wykryto" fakt naciśnięcia przycisku.
+
+4.
+W przypadku tych metod treść funkcji zwrotnych wykonuje się w wątku głównym.
+
+8.
+Nie, nie ma negatywnego wpływu - nie ma opóźnienia.
