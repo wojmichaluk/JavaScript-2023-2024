@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Płótno</title>
+  </head>
+  <body>
+    <main>
+      <h1>Płótno</h1>
+      <canvas id="canvas" style="border:1px solid #000000;">
+      Wygląda na to, że twoja przeglądarka nie obsługuje elementu "canvas" 
+      </canvas>
+    </main>
+
+    <!--
+        Dwie zmiany jakich dokonałem:
+        1) Umieściłem script po tagu canvas (wcześniej był w head)
+        2) Dodałem const ctx = ... (wcześniej było ctx = ...)
+    -->
+    <script>
+        "use strict";                                       // Nie wyłączaj trybu ścisłego    
+        var canvas = document.getElementById('canvas');     // Tutaj jest użyty standard W3C DOM — będzie on tematem następnych ćwiczeń
+        const ctx = canvas.getContext('2d');                // Utworzenie obiektu 'CanvasRenderingContext2D'       
+        ctx.fillText("Hello World", 10, canvas.height / 2); // Wykreślenie podanego tekstu na płótnie
+
+        //ustawienia do rysowania loga
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+        grad.addColorStop(0, "blue");
+        grad.addColorStop(0.4, "dodgerblue");
+        grad.addColorStop(1, "springgreen");
+        ctx.lineWidth = 5;
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        //Za pomocą kształtów stworzę litery U,S,O,S
+        //Tworzenie litery U
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.quadraticCurveTo(40, 240, 60, 20);
+        ctx.stroke();
+
+        //Tworzenie litery S
+        ctx.beginPath();
+        ctx.arc(100, 100, 30, 0, Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(130, 100);
+        ctx.lineTo(70, 50);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(100, 50, 30, Math.PI, 2*Math.PI);
+        ctx.stroke();
+
+        //Tworzenie litery O
+        ctx.beginPath();
+        ctx.ellipse(175, 75, 30, 55, 0.15, 0, 2*Math.PI);
+        ctx.stroke();
+
+        //Tworzenie litery S
+        ctx.beginPath();
+        ctx.arc(250, 100, 30, 0, Math.PI);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(280, 100);
+        ctx.lineTo(220, 50);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(250, 50, 30, Math.PI, 2*Math.PI);
+        ctx.stroke();
+    </script>
+  </body>
+  </html>

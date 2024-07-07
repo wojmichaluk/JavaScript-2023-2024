@@ -1,0 +1,8 @@
+1.2) Po wpisaniu podanych wartości w konsoli pojawia się:
+`43:string
+napis:string
+:string
+null:object`
+
+1.3) We wszystkich przypadkach, obie wartości (z pola tekstowego i pola liczbowego)
+pojawiają się jako `[object HTMLInputElement]:object`.

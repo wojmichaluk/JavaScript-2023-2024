@@ -1,0 +1,13 @@
+.mySlides {
+    display: none;
+}
+      
+.w3-arrow, .w3-tag {
+    cursor: pointer;
+}
+
+.w3-tag {
+    height: 4px;
+    width: 40px; 
+    padding: 0;
+}

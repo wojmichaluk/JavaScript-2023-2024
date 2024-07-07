@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Plik 'zadanie1C.html'</title>
+
+        <!-- Na podstawie zadania 1.3.4 usuwam: 
+        <script>
+            function funkcja_zwrotna() {
+                let text = document.forms[0].elements['pole_tekstowe'];
+                let num = document.forms[0].elements['pole_liczbowe'];
+
+                console.log(text + ":" + typeof text);
+                console.log(num + ":" + typeof num);
+            }
+        </script>
+        -->
+    </head>
+    <body>
+        <form onInput="wynik.value = parseValue(pole_tekstowe.value , pole_liczbowe.value)">
+            <input id="pole_tekstowe" type="text" placeholder="Wprowadź tekst">
+            +
+            <input id="pole_liczbowe" type="number" placeholder="Wprowadź liczbę">    
+            =
+            <output name="wynik" for="pole_tekstowe pole_liczbowe">Tu pojawi się wynik obliczeń</output>    
+            <br>    
+            <input type="button" value="Wypisz" onclick='funkcja_zwrotna()'>
+        </form>
+        <script src="zadanie1.js"></script>
+        <script>
+            window.prompt("Tekst1","Tekst2");
+            //Oba argumenty sa nieobowiązkowe. Pierwszy z nich to tekst, który można wyświetlić
+            //użytkownikowi, drugi to `placeholder`, wartość domyślna w polu do wpisania 
+
+            /* Na podstawie zadania 1.3.4 usuwam:
+            function fourTimes() {
+                for (let i = 0; i < 4; i++) {
+                    let val = window.prompt("Podaj jakąś wartość: ");
+                    console.log(val + ":" + typeof val);
+                }
+            }*/
+
+            fourTimes();
+        </script>
+    </body>
+</html>

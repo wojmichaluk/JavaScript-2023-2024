@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!-- Zmień wartość "lang" z 'en' na 'pl' -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://www.w3schools.com/w3css/4/w3.css"><!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="sheet.css" type="text/css">
+    <title>
+      Tytuł strony / Page Title
+    </title>
+  </head>
+  <body>
+    <!-- Umieść tutaj treść elementu 'body' z zadania 1 -->
+    <!-- Put here the contents of the 'body' element from exercise 1 -->
+    <header class="w3-bar w3-pale-yellow w3-padding-small w3-cell-row w3-margin-bottom">
+      <div class="w3-col m6">
+        <div class="w3-bar-item w3-cell w3-cell-middle">
+          <canvas id="canvas" style="border:1px solid #000000; height:30px">
+            Wygląda na to, że twoja przeglądarka nie obsługuje elementu "canvas" 
+          </canvas>
+        </div>
+        <div class="w3-bar-item w3-large">Wyższa szkoła informatyki</div>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-button w3-hover-pale-yellow w3-pale-yellow">Studia</button>
+          <div class="w3-dropdown-content w3-bar-block w3-round-large w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Stacjonarne</a>
+            <a href="#" class="w3-bar-item w3-button w3-border-bottom">Niestacjonarne</a>
+            <a href="#" class="w3-bar-item w3-button">Informatyka</a>
+            <a href="#" class="w3-bar-item w3-button">Webmastering</a>
+          </div>
+        </div>
+        <button class="w3-button w3-pale-yellow w3-right w3-hide-medium w3-hide-large" onclick="w3_change_state()">&#9776;</button>
+      </div>
+      <div class="w3-col m5 w3-hide-small">
+        <input type="text" class="w3-bar-item w3-input w3-margin-right w3-round-large" placeholder="Szukaj">
+        <a href="#" class="w3-bar-item w3-button w3-border w3-round-large w3-text-gray">Szukaj</a>
+      </div>
+      <div class="w3-col m1 w3-hide-small w3-right-align">
+        <p>USOS</p>
+      </div>
+      <div class="w3-hide-large w3-hide-medium w3-cell-row" id="myNavbar" style="display: none">
+        <div class="w3-margin-bottom w3-col s12">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-hover-pale-yellow w3-pale-yellow w3-left-align">Studia</button>
+          <div id="Demo1" class="w3-white w3-container w3-hide w3-margin-right">
+            <div><a href="#" class="w3-button">Stacjonarne</a></div>
+            <div class=" w3-border-bottom"><a href="#" class="w3-button">Niestacjonarne</a></div>
+            <div><a href="#" class="w3-button">Informatyka</a></div>
+            <div><a href="#" class="w3-button">Webmastering</a></div>
+          </div>
+        </div>
+        <div class="w3-margin-bottom w3-col s12">
+          <input type="text" class="w3-bar-item w3-input w3-round-large" placeholder="Szukaj">
+          <a href="#" class="w3-button w3-border w3-round-large w3-text-gray w3-right">Szukaj</a>
+        </div>
+        <div class="w3-margin-bottom w3-col s12">USOS</div>
+      </div> 
+    </header>
+    <div class="w3-margin-left w3-margin-right">
+      <div class="w3-container w3-gray w3-text-white w3-row" style="margin: 0 4.5%;">
+        <div class="w3-col w3-arrow w3-xlarge" onclick="plusDivs(-1)" style="margin-top:75px; width:1%;">&#10094;</div>
+        <div class="w3-col" style="height: 155px; width:98%">
+          <div class="mySlides w3-center w3-animate-right">
+            <div class="w3-large">Studia z przyszłością</div>
+            <img src="images/przyszlosc.png" alt="group of reasonable students">
+          </div>
+          <div class="mySlides w3-center w3-animate-right">
+            <div class="w3-large">Aplikuj już dziś</div>
+            <img src="images/nie_spij.png" alt="sleeping student, missing opportunities"><br>
+            Nie śpij, bo Cię inni ubiegną
+          </div>
+          <div class="mySlides w3-center w3-animate-right">
+            <div class="w3-large">Promocja</div>
+            Pierwszy semestr za darmo dla losowych 10 osób
+          </div>
+        </div>
+        <div class="w3-col w3-arrow w3-xlarge" onclick="plusDivs(1)" style="margin-top:75px; width:1%">&#10095;</div>
+        <div class="w3-center w3-container" style="margin: 8px 0; width:100%;">
+          <span class="w3-tag demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-tag demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-tag demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row" style="margin: 16px 3.2%;">
+      <div class="w3-col m6 l4">
+        <div class="w3-margin-left w3-margin-right w3-pale-red w3-card">
+          <div class="w3-padding w3-border-bottom w3-margin-bottom">
+            Oferty zatrudnienia
+          </div>
+          <div class="w3-container">
+            <div class="w3-center">
+              <img src="images/oferty.png" alt="two happy girl graduates" width="100%"/>
+            </div>
+            <div class="w3-margin-bottom">
+              <ul class="w3-text-blue">
+                <li><a href="#">Google</a></li>
+                <li><a href="#">IBM</a></li>
+              </ul>
+              <button class="w3-button w3-blue">Pozostałe oferty</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m6 l4">
+        <div class="w3-margin-left w3-margin-right w3-pale-green w3-card">
+          <div class="w3-padding w3-border-bottom w3-margin-bottom">
+            Kierunki
+          </div>
+          <div class="w3-container">
+            <div class="w3-center">
+              <img src="images/kierunki.png" alt="students sitting at a lecture" width="100%"/>
+            </div>
+            <div class="w3-padding-16">
+              <table class="w3-table w3-striped" style="margin-bottom: 32px;">
+                <tr class="w3-teal w3-text-black">
+                  <th>Kierunek</th>
+                  <th>Czesne</th>
+                </tr>
+                <tr>
+                  <td>Informatyka</td>
+                  <td>4000 zł / semestr</td>
+                </tr>
+                <tr>
+                  <td>Webmastering</td>
+                  <td>3500 zł / semestr</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m12 l4">
+        <div class="w3-margin-left w3-margin-right w3-pale-blue w3-card">
+          <div class="w3-padding w3-border-bottom w3-margin-bottom">
+            Zaplecze dydaktyczne
+          </div>
+          <div class="w3-container">
+            <div class="w3-center">
+              <img src="images/zaplecze.png" alt="classroom full of high-class computers" width="100%"/>
+            </div>
+            <p style="margin-top: 4px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+              Budynek został wyposażony w wysokiej klasy systemy telekonferencyjne.
+              W czterech salach zostały zainstalowane urządzenia (C40 oraz C60) firmy
+              TANDBERG umożliwiające przetwarzanie, kodowanie i przesyłanie obrazu
+              w rozdzielczości 1080HD. W jednej z sal zainstalowano system Telepresence
+              Dual 52".
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 138px"></div>
+      <div class="w3-bottom">
+      <div class="w3-margin-left w3-margin-right w3-pale-yellow w3-padding-16">
+        <footer class="w3-padding w3-cell-row">
+          <div class="w3-col s5">
+            <b>Adres siedziby:</b><br>
+            Wyższa szkoła Informatyki<br>
+            ul. Jana Bieleckiego 1<br>
+            30-836 Kraków
+          </div>
+          <div class="w3-col s5">
+            <b>Kontakt:</b><br>
+            <i class="fa-solid fa-envelope-circle-check"></i>
+            <a class="w3-text-blue" href=mailto:dziekanat@wsi.krakow.pl>dziekanat@wsi.krakow.pl</a><br>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <a class="w3-text-blue" href=tel:+48-555-123-456>+48-555-123-456</a>
+          </div>
+          <div class="w3-col s2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
