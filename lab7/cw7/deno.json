@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts",
+    "express": "deno run --check --watch --allow-env --allow-sys --allow-net --allow-read app1.ts"
+  }
+}

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Księga gości</title>
+</head>
+<body>
+    <div>
+        <% guests.forEach(guest => { %>
+            <h1><%= guest.name %></h1>
+            <p><%= guest.comment %></p>
+            <% }); %>
+    </div>
+    <hr>
+    <div style="font-size:24px; margin:8px">Nowy wpis:</div>
+    <form method="POST" action="/" style="margin:8px">
+        <label for="name">Twoje imię i nazwisko</label><br>
+        <input type="text" name="name" style="width:100%" placeholder="Jerzy Wiśniewski"><br><br>
+        <label for="area">Treść wpisu</label><br>
+        <textarea name="area" rows=5 style="width:100%" placeholder="Proszę o kontakt osoby, które ze mną studiowały — tel. 12 345 67 89"></textarea><br><br>
+        <button id="btn" type="submit" style="background-color:#edb826; padding:8px">Dodaj wpis</button>
+    </form>
+</body>
+</html>

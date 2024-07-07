@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Księga gości
+    body
+        div
+            each guest in guests 
+                h1 #{guest.name}
+                p #{guest.comment}
+        hr
+        div(style="font-size:24px; margin:8px") Nowy wpis:
+        form(method="POST" action="/" style="margin:8px")
+            label(for="name") Twoje imię i nazwisko
+            br
+            input(type="text" name="name" style="width:100%" placeholder="Jerzy Wiśniewski")
+            br
+            br
+            label(for="area") Treść wpisu
+            br
+            textarea(name="area" rows=5 style="width:100%" placeholder="Proszę o kontakt osoby, które ze mną studiowały — tel. 12 345 67 89")
+            br
+            br
+            button(id="btn" type="submit" style="background-color:#edb826; padding:8px") Dodaj wpis
