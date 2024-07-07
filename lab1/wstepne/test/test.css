@@ -1,0 +1,9 @@
+.featured-item{
+    font-family: sans-serif;
+    /*padding: 10px; p10*/
+    padding: 1.5rem; /*p1.5r*/
+    margin-bottom: 1rem; /*mb1r*/
+    text-align: center; /*tac*/
+    color: #c2d366;
+    border: 1px solid #001aff;
+}
