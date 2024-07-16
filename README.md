@@ -1,9 +1,9 @@
 # JavaScript-2023-2024
 Repository for JavaScript course at AGH University
 
-W każdym z katalogów **lab*i*, i=1,2,...,7** znajdują się pliki *domowe.pdf* oraz *zajecia.pdf* (dla **lab1** jest to plik `.mp4`; w **lab7** w ogóle go nie ma), zawierające odpowiednio polecenia do zadań, które należało zrobić w domu i póżniej pokazać na zajęciach oraz polecenie do zadania "z zajęć" (które w praktyce też często kończyło się w domu).
+W każdym z katalogów **lab*i*, i=1,2,...,7** znajdują się pliki *domowe.pdf* (niestety linki do filmów nie działają) oraz *zajecia.pdf* (dla **lab1** jest to plik `.mp4`; w **lab7** w ogóle go nie ma), zawierające odpowiednio polecenia do zadań, które należało zrobić w domu i póżniej pokazać na zajęciach oraz polecenie do zadania "z zajęć" (które w praktyce też często kończyło się w domu).
 
-Poza tym w tych folderach są podkatalogi na rozwiązania właśnie zadań domowych (które w pierwszych 3 labach są rozdzielone na **ex1**, **ex2** oraz **ex3**, natomiast w następnych labach są we wspólnym podkatalogu **cw*nr_labów***) i zadań z zajęć, które znajdują się w podkatalogu **ex4**.
+Poza tym w tych folderach są podkatalogi na rozwiązania właśnie zadań domowych (które w pierwszych 3 labach są rozdzielone na **ex1**, **ex2** oraz **ex3**, natomiast w następnych labach są we wspólnym podkatalogu **cw*nr_labów***) i zadań z zajęć, które znajdują się w podkatalogu **ex4** (nie ma go w **lab7**).
 
 Zdaje sobie sprawę, że struktura plików w ramach rozwiązania zadania nie jest na wysokim poziomie (nie wykorzystuje szablonów, mam jeden plik `.html` oraz jeden plik `.js`, kiedy należałoby to spokojnie rozdzielić na kilka plików i sobie to później eksportować.
 Zawaliłem pod tym względem, ale starałem się, żeby przynajmniej kod był nienajgorszej jakości - mam nadzieję, że to mi się udało.
